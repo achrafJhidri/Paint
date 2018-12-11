@@ -9,7 +9,7 @@ class Cercle :
 	double rayon;
 
 public:
-
+	//merde
 	//constructeur
 	Cercle();
 	Cercle(int couleur, const Vecteur2D &centre, double rayon);
