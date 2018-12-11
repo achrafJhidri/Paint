@@ -1,0 +1,50 @@
+#pragma once
+#include<string>
+#include <sstream>
+
+
+using namespace std;
+
+
+template <class T>
+inline const T operator - (const T & u, const T & v) {
+	return u + -v;
+}
+
+class Vecteur2D
+{
+public:
+	double x, y;
+	 Vecteur2D(const double & x = 0, const double & y = 0);
+	 Vecteur2D(const Vecteur2D & v);
+	 Vecteur2D(const char* s);
+	virtual ~Vecteur2D();
+	/**
+	*DONNEES:s respectant le format "(nombre réel ,nombre réel)"
+	**/
+	
+	 const Vecteur2D operator +(const Vecteur2D & u)const;
+	 const Vecteur2D operator*(const double & a)const {
+		 return Vecteur2D(x*a, y*a);
+	 }
+
+	 //const Vecteur2D operator *(const double &a, const Vecteur2D &u)const;
+	 const Vecteur2D operator -()const;
+
+
+	 bool operator==(const Vecteur2D & v)const ;
+	 bool operator!=(const Vecteur2D & v)const { return !(*this == v); };
+
+	operator string()const;
+
+	friend	ostream & operator <<(ostream & os, const Vecteur2D &u);
+	
+	static double det(const Vecteur2D & a, const Vecteur2D & b, const Vecteur2D & c);
+;
+	
+};
+
+inline const Vecteur2D Vecteur2D::operator+(const Vecteur2D &u)const
+{
+	return Vecteur2D(x + u.x, y + u.y);
+}
