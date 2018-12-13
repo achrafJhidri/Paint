@@ -1,6 +1,6 @@
 #pragma once
 #include "FormeSimple.h"
-
+class Transformation;
 class Cercle :
 	public FormeSimple
 {
@@ -9,7 +9,7 @@ class Cercle :
 	double rayon;
 
 public:
-
+	// ouff
 	//constructeur
 	Cercle();
 	Cercle(int couleur, const Vecteur2D &centre, double rayon);
@@ -28,6 +28,9 @@ public:
 	//bool operator==(const Cercle &c)const;
 
 	const Cercle & operator= (const Cercle &c);
+
+	Forme* transforme(const Transformation & t)const;
+
 
 
 };

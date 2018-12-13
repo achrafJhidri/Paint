@@ -1,5 +1,5 @@
 #include "Cercle.h"
-
+#include "Transformation.h"
 
 #define M_PI (3.14159265358979323846)
 Cercle::Cercle()
@@ -72,3 +72,11 @@ const Cercle & Cercle:: operator= (const Cercle &c)
 	couleur = c.couleur;
 	return *this;
 }
+
+Forme * Cercle::transforme(const Transformation & t) const
+{
+	return t.visite(*this);
+}
+
+
+
