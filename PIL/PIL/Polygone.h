@@ -1,6 +1,7 @@
 #pragma once
 #include "FormeSimple.h"
 #include <vector>
+class Transformation;
 class Polygone :
 	public FormeSimple
 {
@@ -28,6 +29,7 @@ public:
 
 	virtual double calculeAir() const;
 	virtual operator string()const;
+	Forme* transforme(const Transformation & t)const;
 
 
 };

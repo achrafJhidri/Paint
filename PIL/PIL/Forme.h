@@ -3,6 +3,7 @@
 #include <sstream>
 #include "Vecteur2D.h"
 #include <iostream>
+class Transformation;
 
 using namespace std;
 class Forme
@@ -30,7 +31,8 @@ public:
 
 	virtual double calculeAir() const = 0;
 
-
+	virtual Forme* transforme(const Transformation & t)const = 0;
+	
 	
 
 

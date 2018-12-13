@@ -26,6 +26,8 @@ Forme::operator string() const
 }
 
 
+
+
 Forme::~Forme()
 {
 }

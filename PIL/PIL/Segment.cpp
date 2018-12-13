@@ -1,5 +1,5 @@
 #include "Segment.h"
-
+#include "Transformation.h"
 
 
 Segment::Segment()
@@ -68,3 +68,9 @@ Segment::operator string() const
 	os << FormeSimple::operator string() << " de type Segment [depart : " << depart << " , fin : " << fin << "]";
 	return os.str();
 }
+
+Forme * Segment::transforme(const Transformation & t) const
+{
+	return t.visite(*this);
+}
+

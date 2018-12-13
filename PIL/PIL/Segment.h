@@ -1,6 +1,6 @@
 #pragma once
 #include "FormeSimple.h"
-
+class Transformation;
 class Segment :
 	public FormeSimple
 {
@@ -28,6 +28,8 @@ public:
 	double calculeAir() const;
 	 operator string()const;
 
+	 Forme* transforme(const Transformation & t)const;
+	
 
 	
 };

@@ -45,6 +45,15 @@
     <ClInclude Include="CompareFormesPtr.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="Transformation.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Translation.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="PIL.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -78,6 +87,12 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="CompareFormesPtr.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Transformation.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Translation.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

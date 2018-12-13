@@ -1,6 +1,7 @@
 #include "FormeComplexe.h"
 #include <algorithm>
 #include "CompareFormesPtr.h"
+#include "Transformation.h"
 
 using namespace std;
 
@@ -128,3 +129,9 @@ FormeComplexe::operator string() const
 
 	return os.str();
 }
+
+Forme * FormeComplexe::transforme(const Transformation & t) const
+{
+	return t.visite(*this);
+}
+

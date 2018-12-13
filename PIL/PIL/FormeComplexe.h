@@ -1,6 +1,7 @@
 #pragma once
 #include "Forme.h"
 #include <vector>
+class Transformation;
 class FormeComplexe :
 	public Forme
 {
@@ -27,5 +28,10 @@ public:
 
 
 	 operator string()const;
+
+	 Forme* transforme(const Transformation & t)const;
+
+
+
 };
 

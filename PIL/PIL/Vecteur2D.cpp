@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Vecteur2D.h"
-
+#include "Transformation.h"
 
 
 
@@ -50,6 +50,11 @@ double Vecteur2D::det(const Vecteur2D & a, const Vecteur2D & b, const Vecteur2D 
 
 
 	return det;
+}
+
+Vecteur2D Vecteur2D::transforme(const Transformation & f) const
+{
+	return f.visite(*this);
 }
 
 ostream & operator<<(ostream & os, const Vecteur2D & u)

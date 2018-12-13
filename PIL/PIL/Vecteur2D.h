@@ -2,6 +2,8 @@
 #include<string>
 #include <sstream>
 
+class Transformation;
+
 
 using namespace std;
 
@@ -40,6 +42,8 @@ public:
 	friend	ostream & operator <<(ostream & os, const Vecteur2D &u);
 	
 	static double det(const Vecteur2D & a, const Vecteur2D & b, const Vecteur2D & c);
+
+	Vecteur2D transforme(const Transformation & f) const;
 ;
 	
 };
