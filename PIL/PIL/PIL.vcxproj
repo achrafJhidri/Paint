@@ -156,9 +156,12 @@
     <ClInclude Include="Forme.h" />
     <ClInclude Include="FormeComplexe.h" />
     <ClInclude Include="FormeSimple.h" />
+    <ClInclude Include="Homotetie.h" />
+    <ClInclude Include="Matrice2D.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PIL.h" />
     <ClInclude Include="Polygone.h" />
+    <ClInclude Include="Rotation.h" />
     <ClInclude Include="Segment.h" />
     <ClInclude Include="Transformation.h" />
     <ClInclude Include="Translation.h" />
@@ -171,6 +174,8 @@
     <ClCompile Include="Forme.cpp" />
     <ClCompile Include="FormeComplexe.cpp" />
     <ClCompile Include="FormeSimple.cpp" />
+    <ClCompile Include="Homotetie.cpp" />
+    <ClCompile Include="Matrice2D.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -179,6 +184,7 @@
     </ClCompile>
     <ClCompile Include="PIL.cpp" />
     <ClCompile Include="Polygone.cpp" />
+    <ClCompile Include="Rotation.cpp" />
     <ClCompile Include="Segment.cpp" />
     <ClCompile Include="Transformation.cpp" />
     <ClCompile Include="Translation.cpp" />

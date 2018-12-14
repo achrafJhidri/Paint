@@ -4,7 +4,7 @@
 
 class Transformation;
 
-
+#define M_PI (3.14159265358979323846)
 using namespace std;
 
 
@@ -32,7 +32,9 @@ public:
 
 	 //const Vecteur2D operator *(const double &a, const Vecteur2D &u)const;
 	 const Vecteur2D operator -()const;
-
+	 double operator * (const Vecteur2D & b)const {
+		 return x * b.x + y * b.y;
+	 }
 
 	 bool operator==(const Vecteur2D & v)const ;
 	 bool operator!=(const Vecteur2D & v)const { return !(*this == v); };

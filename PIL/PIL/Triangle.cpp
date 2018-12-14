@@ -1,5 +1,5 @@
 #include "Triangle.h"
-
+#include "Transformation.h"
 
 
 
@@ -53,6 +53,11 @@ Triangle::operator string() const
 
 
 	return os.str();
+}
+
+Forme * Triangle::transforme(const Transformation & t) const
+{
+	return t.visite(*this);
 }
 
 

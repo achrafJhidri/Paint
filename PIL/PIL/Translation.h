@@ -18,15 +18,6 @@ public:
 	
 	
 	 operator string()const;
-
-
-
-
-
-	  Forme* visite(const Polygone & p)const ;
-	  Forme* visite(const Segment & s)const ;
-	  Forme* visite(const Cercle & c)const ;
-	  Forme* visite(const FormeComplexe& f)const ;
 	  Vecteur2D visite(const Vecteur2D& f)const ;
 };
 

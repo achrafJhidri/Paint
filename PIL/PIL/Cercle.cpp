@@ -1,7 +1,7 @@
 #include "Cercle.h"
 #include "Transformation.h"
 
-#define M_PI (3.14159265358979323846)
+
 Cercle::Cercle()
 	:FormeSimple(), centre(0, 0), rayon(0)
 {
