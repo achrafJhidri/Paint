@@ -1,6 +1,6 @@
 #include "Cercle.h"
 #include "Transformation.h"
-
+//
 
 Cercle::Cercle()
 	:FormeSimple(), centre(0, 0), rayon(0)
