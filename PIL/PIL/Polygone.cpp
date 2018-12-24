@@ -110,10 +110,9 @@ Polygone::operator string() const
 
 	for (int i = 0; i < points.size() ; i++)
 		os << " p" << i << " " << points[i] << ",";
-
-
 	return os.str();
 }
+
 
 Forme * Polygone::transforme(const Transformation & t) const
 {

@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
 #include <sstream>
 #include "Vecteur2D.h"
 #include <iostream>
@@ -35,7 +36,8 @@ public:
 	virtual Forme* transforme(const Transformation & t)const = 0;
 
 	
-	
+	static vector<Forme*> chargeAll(const string &filename);
+	static Forme * charge(int i,const string &filename  );
 
 
 
