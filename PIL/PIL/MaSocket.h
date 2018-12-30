@@ -3,6 +3,7 @@
 #include <winsock2.h>
 #include "Forme.h"
 
+#pragma comment(lib, "ws2_32.lib")
 using namespace std;
 class MaSocket
 {

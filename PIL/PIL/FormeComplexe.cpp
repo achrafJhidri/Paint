@@ -117,7 +117,7 @@ double FormeComplexe::calculeAir() const
 FormeComplexe::operator string() const
 {
 	ostringstream os;
-	os << "FormeComplexe [" << Forme::operator string() << "] composé de " << endl << "[" << endl;
+	os << "FormeComplexe " << Forme::operator string() << " " << endl << "[" << endl;
 
 
 	for (int i = 0; i < formes.size(); i++)
