@@ -1,0 +1,5 @@
+FormeComplexe couleur 444 [FormeComplexe couleur 200 [Segment couleur 200 {(32,88);(11,-32.32)}|Cercle de rayon 15.32 couleur 0954 (-322.1,0.5)]]
+Cercle de rayon 15.32 couleur 222 (-322.1,0.5)
+Segment couleur 200 {(13,43.3);(-32,04)}
+Polygone couleur 3214 {(32,20);(-322.1,0.5);(32,20);(13,43.3);(32,20)}
+Triangle couleur 222 {(32,20);(32,-2.30);(32,34)}

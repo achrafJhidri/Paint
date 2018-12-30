@@ -1,6 +1,6 @@
 #include "Cercle.h"
 #include "Transformation.h"
-// achraf
+
 
 Cercle::Cercle()
 	:FormeSimple(), centre(0, 0), rayon(0)
@@ -60,7 +60,7 @@ double Cercle::calculeAir()const
 }
 Cercle::operator string() const {
 	ostringstream os;
-	os << FormeSimple::operator string() << "de type  Cercle[ centre " << centre << " ,rayan " << rayon << "]";
+	os << FormeSimple::operator string() << " de type Cercle [centre " << centre << " ,rayon " << rayon << "]";
 	return os.str();
 
 }

@@ -1,5 +1,7 @@
 #include "Forme.h"
-
+#include <fstream>
+#include <exception>
+#include"ParseurForme.h"
 
 
 Forme::Forme()
@@ -24,6 +26,7 @@ Forme::operator string() const
 	os << "Couleur : " << couleur ;
 	return os.str();
 }
+
 
 
 
