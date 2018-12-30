@@ -1,123 +1,210 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Fichiers sources">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Fichiers de ressources">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers de ressources\Chargeur &amp; Parseur">
+      <UniqueIdentifier>{b24221b0-abef-40ac-8f23-a56ff71f2135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Chargeur &amp; Parseur\Fichiers d%27en-tête">
+      <UniqueIdentifier>{2cc20800-9a18-495e-8c51-4e84a1cbdc9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Chargeur &amp; Parseur\Fichiers sources">
+      <UniqueIdentifier>{c17da35c-322a-42e4-83ea-30acf9892223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Transformations">
+      <UniqueIdentifier>{d557bf98-4857-4bee-b587-358ae8adcdb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Transformations\Fichiers d%27en-tête">
+      <UniqueIdentifier>{aaa78aa1-86f6-4d79-99e6-585b71ac4ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Transformations\Fichiers sources">
+      <UniqueIdentifier>{7d69bd27-fd02-437a-8c79-bf3c97201199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Formes">
+      <UniqueIdentifier>{6c3d3836-1250-403a-ae37-931d3589e787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Formes\Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Formes\Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Outils">
+      <UniqueIdentifier>{69e53666-dac2-4b01-adc5-4930cdc52a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Outils\Fichiers d%27en-tête">
+      <UniqueIdentifier>{135b37bc-6dbb-4426-9049-9fbd0e50beaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\Outils\Fichiers sources">
+      <UniqueIdentifier>{715ce387-7de9-4097-8cdd-d67dc97d70ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\App">
+      <UniqueIdentifier>{ac48b9ec-eec2-4330-94b5-620a7a431142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\App\Fichiers d%27en-tête">
+      <UniqueIdentifier>{c484877c-af48-49e2-ba2e-0359b2516344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources\App\Fichiers sources">
+      <UniqueIdentifier>{413816b1-be58-4c9a-ae94-dda69f68b911}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Vecteur2D.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="Forme.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="FormeSimple.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Segment.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Polygone.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Triangle.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Cercle.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="FormeComplexe.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="CompareFormesPtr.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="ChargeurListeForme.h">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Transformation.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Translation.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="PIL.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Matrice2D.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Rotation.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Homotetie.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="ParseurCercle.h">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="ParseurExpert.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseurForme.h">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseurFormeComplexe.h">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseurPolygone.h">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseurSegment.h">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseurTriangle.h">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Rotation.h">
+      <Filter>Fichiers de ressources\Transformations\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Transformation.h">
+      <Filter>Fichiers de ressources\Transformations\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Translation.h">
+      <Filter>Fichiers de ressources\Transformations\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Homotetie.h">
+      <Filter>Fichiers de ressources\Transformations\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CompareFormesPtr.h">
+      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrice2D.h">
+      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Vecteur2D.h">
+      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="PIL.h">
+      <Filter>Fichiers de ressources\App\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="MaSocket.h">
+      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="PIL.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Vecteur2D.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="Forme.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="FormeSimple.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Segment.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Polygone.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Triangle.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Cercle.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="FormeComplexe.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers de ressources\Formes\Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="CompareFormesPtr.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="ChargeurListeForme.cpp">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Transformation.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Translation.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Matrice2D.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Rotation.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Homotetie.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="ParseurCercle.cpp">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="ParseurExpert.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseurForme.cpp">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseurFormeComplexe.cpp">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseurPolygone.cpp">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseurTriangle.cpp">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseurSegment.cpp">
+      <Filter>Fichiers de ressources\Chargeur &amp; Parseur\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Translation.cpp">
+      <Filter>Fichiers de ressources\Transformations\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Transformation.cpp">
+      <Filter>Fichiers de ressources\Transformations\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Rotation.cpp">
+      <Filter>Fichiers de ressources\Transformations\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Homotetie.cpp">
+      <Filter>Fichiers de ressources\Transformations\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrice2D.cpp">
+      <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Vecteur2D.cpp">
+      <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CompareFormesPtr.cpp">
+      <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="PIL.cpp">
+      <Filter>Fichiers de ressources\App\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MaSocket.cpp">
+      <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

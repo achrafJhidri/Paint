@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "Vecteur2D.h"
 #include "Transformation.h"
+#include <regex>
+#include <iomanip>
 
 
 
@@ -13,6 +15,13 @@ Vecteur2D::Vecteur2D(const Vecteur2D & v)
 }
 Vecteur2D::Vecteur2D(const char * s)
 {
+	if (!regex_match(s, regex("^\\(-?[0-9]+\.?[0-9]*,-?[0-9]+\.?[0-9]*\\)$")))
+		throw "s est mal parsé";
+	double _x, _y;
+	sscanf_s(s, "(%lf,%lf)", &_x, &_y);
+	x = _x; 
+	y = _y;
+
 }
  Vecteur2D::Vecteur2D(const double &_x, const double & _y)
 	: x(_x), y(_y)
@@ -32,8 +41,8 @@ Vecteur2D::Vecteur2D(const char * s)
 Vecteur2D::operator string() const
 {
 	ostringstream os;
-	os << "(" << x << "," << y << ")";
-	return os.str();
+	os << fixed << setprecision(2) <<"(" << x << "," << y << ")";
+	return os.str() ;
 
 }
 

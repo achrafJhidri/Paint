@@ -152,13 +152,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Cercle.h" />
+    <ClInclude Include="ChargeurListeForme.h" />
     <ClInclude Include="CompareFormesPtr.h" />
     <ClInclude Include="Forme.h" />
     <ClInclude Include="FormeComplexe.h" />
     <ClInclude Include="FormeSimple.h" />
     <ClInclude Include="Homotetie.h" />
+    <ClInclude Include="MaSocket.h" />
     <ClInclude Include="Matrice2D.h" />
+    <ClInclude Include="ParseurCercle.h" />
     <ClInclude Include="ParseurExpert.h" />
+    <ClInclude Include="ParseurForme.h" />
+    <ClInclude Include="ParseurFormeComplexe.h" />
+    <ClInclude Include="ParseurPolygone.h" />
+    <ClInclude Include="ParseurSegment.h" />
+    <ClInclude Include="ParseurTriangle.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PIL.h" />
     <ClInclude Include="Polygone.h" />
@@ -171,13 +179,21 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cercle.cpp" />
+    <ClCompile Include="ChargeurListeForme.cpp" />
     <ClCompile Include="CompareFormesPtr.cpp" />
     <ClCompile Include="Forme.cpp" />
     <ClCompile Include="FormeComplexe.cpp" />
     <ClCompile Include="FormeSimple.cpp" />
     <ClCompile Include="Homotetie.cpp" />
+    <ClCompile Include="MaSocket.cpp" />
     <ClCompile Include="Matrice2D.cpp" />
+    <ClCompile Include="ParseurCercle.cpp" />
     <ClCompile Include="ParseurExpert.cpp" />
+    <ClCompile Include="ParseurForme.cpp" />
+    <ClCompile Include="ParseurFormeComplexe.cpp" />
+    <ClCompile Include="ParseurPolygone.cpp" />
+    <ClCompile Include="ParseurSegment.cpp" />
+    <ClCompile Include="ParseurTriangle.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -106,10 +106,12 @@ double Polygone::calculeAir() const
 Polygone::operator string() const
 {
 	ostringstream os;
-	os << FormeSimple::operator string() + " de type polygone [composé de points :  ";
+	os << FormeSimple::operator string() + " de type polygone [";
 
-	for (int i = 0; i < points.size() ; i++)
+	for (int i = 0; i < points.size()-1 ; i++)
 		os << " p" << i << " " << points[i] << ",";
+	os << " p" << points.size()-1 << " " << points[points.size()-1] << "]";
+
 	return os.str();
 }
 

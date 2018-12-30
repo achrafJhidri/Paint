@@ -33,11 +33,8 @@ double Triangle::calculeAir() const
 
 const Triangle * Triangle::operator=(const Triangle & s)
 {
-	
 	couleur = s.couleur;
 	points = s.points;
-
-
 	return this;
 }
 

@@ -1,6 +1,7 @@
 #include "Forme.h"
 #include <fstream>
 #include <exception>
+#include"ParseurForme.h"
 
 
 Forme::Forme()
@@ -26,43 +27,6 @@ Forme::operator string() const
 	return os.str();
 }
 
-vector<Forme*> Forme::chargeAll(const string &filename )
-{
-
-	vector<Forme *> vecteurForme;
-	ifstream myfile;
-	myfile.open(filename, std::fstream::in);
-	if (myfile.is_open()) {
-		string  s;
-
-
-		while (getline(myfile, s)) {
-
-			Forme * f = NULL;
-
-			try {
-				//f = Parseur.resoudre(s);
-			}
-			catch (exception e) {
-				cout << e.what();
-			}
-			if (f != NULL)
-			{
-				vecteurForme.push_back(f);
-
-			}
-		}
-	}
-	else
-		throw "File not Found";
-
-	return vecteurForme;
-}
-
-Forme * Forme::charge(int i, const string &filename )
-{
-	return nullptr;
-}
 
 
 
