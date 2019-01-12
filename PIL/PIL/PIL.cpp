@@ -27,6 +27,10 @@
 
 #include "MaSocket.h"
 
+#include "DessinateurJava.h"
+#include "Sauveur.h"
+#include "SauveurFichier.h"
+
 
 using namespace std;
 void initialisationWSA();
@@ -35,28 +39,44 @@ int main()
 {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
+	// test du Save
+	//SauveurFichier sauveur =  SauveurFichier("test.txt");
+	//FormeComplexe f;
+	//Cercle c(200, Vecteur2D(1, 1), 10);
+	//Segment s(400, Vecteur2D(1, 1), Vecteur2D(2, 2));
+	//Polygone p(Triangle(201, Vecteur2D(4, -32), Vecteur2D(389, -3.2), Vecteur2D(63, -1)));
+	//f.addForme(p);
+	//
+	//f.save(sauveur);
+
+
+
+
+
+
 	string ipAddress = "127.0.0.1";
 	int port = 9111;
 	// Test Communication avec serveur Java
 	// initialisation WSA
 	initialisationWSA();
 	char buf[BUFSIZ];
-	MaSocket * sock = MaSocket::getInstance();
-	sock->connectTo(ipAddress, port);
-	Segment s = Segment();
-	FormeComplexe f;
-	f.addForme(s).addForme(Triangle(201, Vecteur2D(4, -32), Vecteur2D(389, -3.2), Vecteur2D(63, -1)));
-	sock->envoyer(f);
-	sock->recever(buf);
-	cout << buf << endl;
-	delete sock;
+	//MaSocket  sock;
+	//sock.connectTo(ipAddress, port);
+
+	//FormeComplexe f;
+	//f.addForme(s).addForme(Triangle(201, Vecteur2D(4, -32), Vecteur2D(389, -3.2), Vecteur2D(63, -1)));
+	//sock.envoyer(f);
+	//sock.recever(buf);
+	//cout << buf << endl;
+	//Triangle t = Triangle(4442131, Vecteur2D(4, -32), Vecteur2D(389, -3.2), Vecteur2D(63, -1));
+	//t.accepte(DessinateurJava());
 
 
 	//Cercle c(200, Vecteur2D(1, 1), 10);
 	//Forme * cprime = c.transforme(h);
 	//cout << "la rotation PI au centre 0.0" << c << "donne " << *cprime << endl;
 
-	////test de la recuperation apartir d'un fichier
+	//test de la recuperation apartir d'un fichier
 	//ChargeurListeForme * chargeur = ChargeurListeForme::getInstance();
 
 	//ParseurForme * p = new ParseurSegment(NULL);
@@ -69,11 +89,15 @@ int main()
 	// for(int i = 0 ; i < v.size() ; i++)
 	//	cout << *v[i] << endl;
 
-	// for (int i = 0; i < v.size(); i++)
-	//	 delete v[i];
-	//
-	// delete p;
-	// delete chargeur;
+	// cout << v.size() << endl;
+
+
+	 //DessinateurJava dessinateur;
+	 //for (int i = 0; i < v.size(); i++)
+		// v[i]->accepte(dessinateur);
+	
+	 //delete p;
+	 //delete chargeur;
 
 
 

@@ -117,11 +117,11 @@ double FormeComplexe::calculeAir() const
 FormeComplexe::operator string() const
 {
 	ostringstream os;
-	os << "FormeComplexe " << Forme::operator string() << " " << endl << "[" << endl;
+	os << "FormeComplexe " << Forme::operator string() << " [";
 
 
 	for (int i = 0; i < formes.size(); i++)
-		os << "" << i << "-" << *(formes[i]) << endl;
+		os << "" << i << "-" << *(formes[i]);
 
 	os << "]";
 
@@ -133,5 +133,16 @@ FormeComplexe::operator string() const
 Forme * FormeComplexe::transforme(const Transformation & t) const
 {
 	return t.visite(*this);
+}
+
+string FormeComplexe::print() const
+{
+	ostringstream os;
+	os << "FormeComplexe couleur " << couleur << " [";
+	for (int i = 0; i < formes.size() - 1; i++)
+		os << formes[i]->print() << "|";
+	os << formes[formes.size() - 1]->print();
+	os << "]";
+	return os.str();
 }
 

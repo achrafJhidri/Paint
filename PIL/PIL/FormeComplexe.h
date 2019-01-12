@@ -31,6 +31,7 @@ public:
 
 	 Forme* transforme(const Transformation & t)const;
 
+	 string print() const;
 
 
 };

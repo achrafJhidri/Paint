@@ -4,7 +4,6 @@
 #pragma warning(disable:4996) 
 
 
-static MaSocket * socketCourant = NULL;
 
 MaSocket::MaSocket()
 {
@@ -21,12 +20,7 @@ MaSocket::MaSocket()
 	}
 	cout << "Sockette creation succed " << endl;
 }
-MaSocket * MaSocket::getInstance()
-{
-	if (!socketCourant)
-		socketCourant = new MaSocket();
-	return socketCourant;
-}
+
 MaSocket::~MaSocket()
 {
 	closesocket(sock);
@@ -34,7 +28,7 @@ MaSocket::~MaSocket()
 
 
 
-int MaSocket::connectTo(const string & Ip, int p)const
+void MaSocket::connectTo(const string & Ip, int p)const
 {
 	SOCKADDR_IN hint;
 	hint.sin_family = AF_INET;
@@ -49,11 +43,11 @@ int MaSocket::connectTo(const string & Ip, int p)const
 	else
 	{
 		cout << "Connexion succeded " << endl;
-		return con;
+
 	}
 
 }
-int MaSocket::envoyer(const string & msg) const
+void MaSocket::envoyer(const string & msg) const
 {
 	int sent = send(sock, msg.c_str(), strlen(msg.c_str()), 0);
 
@@ -64,13 +58,13 @@ int MaSocket::envoyer(const string & msg) const
 		WSACleanup();
 	}
 	cout << "Envoi réussie " << endl;
-	return sent;
+	
 }
-int MaSocket::envoyer(const Forme & f) const
+void MaSocket::envoyer(const Forme & f) const
 {
-	return envoyer(string(f) + "\r\n");
+	 envoyer(string(f) + "\r\n");
 }
-int MaSocket::recever(char buf[]) const
+void MaSocket::recever(char buf[]) const
 {
 	int rec = recv(sock, buf, BUFSIZ - 1, 0);
 	if (rec == SOCKET_ERROR)
@@ -83,5 +77,5 @@ int MaSocket::recever(char buf[]) const
 
 	buf[rec] = '\0';
 
-	return rec;
+	
 }

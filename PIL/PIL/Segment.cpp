@@ -74,3 +74,14 @@ Forme * Segment::transforme(const Transformation & t) const
 	return t.visite(*this);
 }
 
+string Segment::print() const
+{
+
+	ostringstream os;
+	os << "Segment couleur " << couleur << " {";
+	os << depart << ";" << fin << "}";
+
+		return os.str();
+	
+}
+

@@ -78,5 +78,14 @@ Forme * Cercle::transforme(const Transformation & t) const
 	return t.visite(*this);
 }
 
+string Cercle::print() const
+{
+	
+		ostringstream os;
+		os << "Cercle rayon " << rayon << " couleur " << couleur << " "<< centre;
+		return os.str();
+	
+}
+
 
 

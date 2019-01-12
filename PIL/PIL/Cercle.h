@@ -29,7 +29,7 @@ public:
 	const Cercle & operator= (const Cercle &c);
 
 	Forme* transforme(const Transformation & t)const;
-
+	string print() const;
 
 
 };

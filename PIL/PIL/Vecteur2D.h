@@ -30,7 +30,7 @@ public:
 		 return Vecteur2D(x*a, y*a);
 	 }
 
-	 //const Vecteur2D operator *(const double &a, const Vecteur2D &u)const;
+	 
 	 const Vecteur2D operator -()const;
 	 double operator * (const Vecteur2D & b)const {
 		 return x * b.x + y * b.y;

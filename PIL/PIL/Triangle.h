@@ -17,7 +17,7 @@ public:
 	const Triangle * operator=(const Triangle & s);
 	operator string()const;
 	Forme* transforme(const Transformation & t)const;
-
+	string print() const;
 };
 
 

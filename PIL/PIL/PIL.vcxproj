@@ -154,6 +154,8 @@
     <ClInclude Include="Cercle.h" />
     <ClInclude Include="ChargeurListeForme.h" />
     <ClInclude Include="CompareFormesPtr.h" />
+    <ClInclude Include="Dessinateur.h" />
+    <ClInclude Include="DessinateurJava.h" />
     <ClInclude Include="Forme.h" />
     <ClInclude Include="FormeComplexe.h" />
     <ClInclude Include="FormeSimple.h" />
@@ -171,6 +173,8 @@
     <ClInclude Include="PIL.h" />
     <ClInclude Include="Polygone.h" />
     <ClInclude Include="Rotation.h" />
+    <ClInclude Include="Sauveur.h" />
+    <ClInclude Include="SauveurFichier.h" />
     <ClInclude Include="Segment.h" />
     <ClInclude Include="Transformation.h" />
     <ClInclude Include="Translation.h" />
@@ -181,6 +185,8 @@
     <ClCompile Include="Cercle.cpp" />
     <ClCompile Include="ChargeurListeForme.cpp" />
     <ClCompile Include="CompareFormesPtr.cpp" />
+    <ClCompile Include="Dessinateur.cpp" />
+    <ClCompile Include="DessinateurJava.cpp" />
     <ClCompile Include="Forme.cpp" />
     <ClCompile Include="FormeComplexe.cpp" />
     <ClCompile Include="FormeSimple.cpp" />
@@ -203,6 +209,8 @@
     <ClCompile Include="PIL.cpp" />
     <ClCompile Include="Polygone.cpp" />
     <ClCompile Include="Rotation.cpp" />
+    <ClCompile Include="Sauveur.cpp" />
+    <ClCompile Include="SauveurFichier.cpp" />
     <ClCompile Include="Segment.cpp" />
     <ClCompile Include="Transformation.cpp" />
     <ClCompile Include="Translation.cpp" />

@@ -57,4 +57,16 @@ Forme * Triangle::transforme(const Transformation & t) const
 	return t.visite(*this);
 }
 
+string Triangle::print() const
+{
+	ostringstream os;
+
+	os << "Triangle couleur " << couleur << " {";
+	for (int i = 0; i < points.size() - 1; i++)
+		os << points[i] <<";";
+	os << points[points.size()-1] << "}";
+
+	return os.str();
+}
+
 

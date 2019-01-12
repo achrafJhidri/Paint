@@ -9,17 +9,12 @@ class MaSocket
 {
 
 	SOCKET sock;
-	static MaSocket * ocketCourant;
-	MaSocket();
+	void envoyer(const string & msg)const;
 public:
-
-	static MaSocket * getInstance();
+	MaSocket();
 	~MaSocket();
-
-
-	int connectTo(const string & Ip, int p)const;
-	int envoyer(const string & msg)const;
-	int envoyer(const Forme& f)const;
-	int recever(char buf[])const;
+	void connectTo(const string & Ip, int p)const;
+	void envoyer(const Forme& f)const;
+	void recever(char buf[])const;
 };
 

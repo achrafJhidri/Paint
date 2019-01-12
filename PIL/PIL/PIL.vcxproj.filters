@@ -129,6 +129,18 @@
     <ClInclude Include="MaSocket.h">
       <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="Dessinateur.h">
+      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="DessinateurJava.h">
+      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="SauveurFichier.h">
+      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Sauveur.h">
+      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Forme.cpp">
@@ -204,6 +216,18 @@
       <Filter>Fichiers de ressources\App\Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="MaSocket.cpp">
+      <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Dessinateur.cpp">
+      <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="DessinateurJava.cpp">
+      <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Sauveur.cpp">
+      <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SauveurFichier.cpp">
       <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
