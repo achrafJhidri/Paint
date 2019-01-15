@@ -1,3 +1,8 @@
+/**
+*\file ParseurExpert.h
+*\author JHIDRI MOKHTARI
+*\brief Foncteur qui prend 2 formes et compare leurs string()
+*/
 #pragma once
 #include "Forme.h"
 class CompareFormesPtr

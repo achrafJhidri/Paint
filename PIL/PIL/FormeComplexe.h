@@ -9,7 +9,7 @@ class FormeComplexe :
 public:
 	FormeComplexe();
 	FormeComplexe(const FormeComplexe & f);
-	/*on derivera pas  donc inutile le virtual*/
+
 	~FormeComplexe();
 
 	Forme * Clone()const;
@@ -17,7 +17,7 @@ public:
 	const vector<Forme *>& getFormes()const;
 	FormeComplexe & addForme(const Forme & f);
 	const FormeComplexe & supForme(const Forme & f);
-	const FormeComplexe & supForme(const int i);
+	const FormeComplexe & supForme(const unsigned int i);
 
 	vector<Forme*>::const_iterator  contient(const Forme *)const;
 

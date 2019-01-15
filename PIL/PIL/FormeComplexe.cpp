@@ -23,7 +23,7 @@ FormeComplexe::FormeComplexe(const FormeComplexe & f)
 FormeComplexe::~FormeComplexe()
 {
 	
-	int i;
+	unsigned int i;
 	for (i=0; i < formes.size(); i++)
 	{
 		delete formes[i];
@@ -55,6 +55,9 @@ FormeComplexe & FormeComplexe::addForme(const Forme & f)
 		if (formes.size() == 0)
 			setCouleur(f.getCouleur());
 		Forme * f2 = f.Clone();
+		if (formes.size() != 0)
+			f2->setCouleur(getCouleur());
+		
 		formes.push_back(f2);
 	}
 	return *this;
@@ -78,7 +81,7 @@ const FormeComplexe & FormeComplexe::supForme(const Forme & f)
 	return *this;
 }
 
-const FormeComplexe & FormeComplexe::supForme(const int i)
+const FormeComplexe & FormeComplexe::supForme(const unsigned int i)
 {
 	if (i < 0 || i >= formes.size())
 		throw "index hors bornes dans supression dans formecomplexe";
@@ -117,13 +120,13 @@ double FormeComplexe::calculeAir() const
 FormeComplexe::operator string() const
 {
 	ostringstream os;
-	os << "FormeComplexe " << Forme::operator string() << " [";
+	os << "FormeComplexe " << Forme::operator string() << " [" << endl ;
 
 
-	for (int i = 0; i < formes.size(); i++)
-		os << "" << i << "-" << *(formes[i]);
+	for (unsigned int i = 0; i < formes.size(); i++)
+		os <<"\t" << i << "-" << *(formes[i]) << endl;
 
-	os << "]";
+	os <<"]" ;
 
 
 
@@ -139,7 +142,7 @@ string FormeComplexe::print() const
 {
 	ostringstream os;
 	os << "FormeComplexe couleur " << couleur << " [";
-	for (int i = 0; i < formes.size() - 1; i++)
+	for (unsigned int i = 0; i < formes.size() - 1; i++)
 		os << formes[i]->print() << "|";
 	os << formes[formes.size() - 1]->print();
 	os << "]";

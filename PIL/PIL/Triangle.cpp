@@ -5,7 +5,7 @@
 
 
 
-Triangle::Triangle(int couleur, const Vecteur2D & p1, const Vecteur2D & p2, const Vecteur2D & p3)
+Triangle::Triangle(unsigned int couleur, const Vecteur2D & p1, const Vecteur2D & p2, const Vecteur2D & p3)
 	: Polygone(couleur,p1,p2,p3)
 {
 
@@ -43,7 +43,7 @@ Triangle::operator string() const
 	ostringstream os;
 	os << FormeSimple::operator string() + " de type Triangle [points : ";
 
-	for (int i = 0; i < points.size() -1 ; i++)
+	for (unsigned int i = 0; i < points.size() -1 ; i++)
 		os << "p" << i << points[i] << ",";
 
 	os << "p" << points.size() - 1 <<  points[points.size() - 1] << "]";
@@ -62,7 +62,7 @@ string Triangle::print() const
 	ostringstream os;
 
 	os << "Triangle couleur " << couleur << " {";
-	for (int i = 0; i < points.size() - 1; i++)
+	for (unsigned int i = 0; i < points.size() - 1; i++)
 		os << points[i] <<";";
 	os << points[points.size()-1] << "}";
 

@@ -5,7 +5,7 @@ class FormeSimple :
 {
 public:
 	FormeSimple();
-	FormeSimple(int couleur);
+	FormeSimple(unsigned int couleur);
 	FormeSimple(const FormeSimple & f);
 	virtual ~FormeSimple();
 

@@ -2,9 +2,10 @@
 
 
 
-DessinateurJava::DessinateurJava()
+DessinateurJava::DessinateurJava(const string & ip, const int port):Dessinateur()
 {
-	sock.connectTo("127.0.0.1", 9111);
+
+	sock.connectTo(ip, port);
 }
 
 
@@ -21,6 +22,6 @@ void DessinateurJava::visite(const Forme & f) const
 DessinateurJava::operator string() const
 {
 	ostringstream os;
-	/*os << Dessinateur::operator string << "avec Java awt pour le moment ";*/
+	//os << Dessinateur::operator string << "avec Java awt ";
 	return os.str();
 }

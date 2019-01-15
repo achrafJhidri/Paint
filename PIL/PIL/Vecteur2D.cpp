@@ -15,7 +15,7 @@ Vecteur2D::Vecteur2D(const Vecteur2D & v)
 }
 Vecteur2D::Vecteur2D(const char * s)
 {
-	if (!regex_match(s, regex("^\\(-?[0-9]+\.?[0-9]*,-?[0-9]+\.?[0-9]*\\)$")))
+	if (!regex_match(s, regex("^\\(-?[0-9]+\\.?[0-9]*,-?[0-9]+\\.?[0-9]*\\)$")))
 		throw "s est mal parsé";
 	double _x, _y;
 	sscanf_s(s, "(%lf,%lf)", &_x, &_y);

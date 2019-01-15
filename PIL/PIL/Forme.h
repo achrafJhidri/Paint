@@ -16,19 +16,19 @@ using namespace std;
 class Forme
 {
 protected:
-	int couleur;
+	unsigned	int couleur;
 public:
 
 
 
 	Forme();
-	Forme(int couleur);
+	Forme(unsigned int couleur);
 	Forme(const Forme& f);
 	virtual Forme* Clone() const = 0;
 	virtual ~Forme();
 
-	int getCouleur() const;
-	void setCouleur(const int c) ;
+	unsigned int getCouleur() const;
+	void setCouleur(const unsigned int c) ;
 
 
 

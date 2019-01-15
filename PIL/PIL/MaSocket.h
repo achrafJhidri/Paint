@@ -1,3 +1,8 @@
+/**
+*\file ParseurExpert.h
+*\author JHIDRI MOKHTARI
+*\brief class Socket 
+*/
 #pragma once
 #include <string>
 #include <winsock2.h>
@@ -14,6 +19,10 @@ public:
 	MaSocket();
 	~MaSocket();
 	void connectTo(const string & Ip, int p)const;
+/**
+*\param f la forme a dessiné
+*\brief prend une forme et l'envoi en format text au socket
+*/
 	void envoyer(const Forme& f)const;
 	void recever(char buf[])const;
 };

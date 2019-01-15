@@ -51,7 +51,7 @@ Forme * ParseurPolygone::resoudre1(const string & d) const
 
 		vector<Vecteur2D> v;
 		vector<string> res = split1(ligne, ';');
-		for (int i = 0; i < res.size(); i++)
+		for (unsigned int i = 0; i < res.size(); i++)
 		{
 			v.push_back(Vecteur2D(res[i].c_str()));
 		}

@@ -1,3 +1,9 @@
+/**
+*\file ParseurExpert.h
+*\author JHIDRI MOKHTARI
+*\brief Class Abstraite qui prend une forme et la dessine
+*/
+
 #pragma once
 #include "Forme.h"
 class Dessinateur

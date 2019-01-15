@@ -23,7 +23,9 @@ MaSocket::MaSocket()
 
 MaSocket::~MaSocket()
 {
+	
 	closesocket(sock);
+	
 }
 
 
@@ -62,7 +64,7 @@ void MaSocket::envoyer(const string & msg) const
 }
 void MaSocket::envoyer(const Forme & f) const
 {
-	 envoyer(string(f) + "\r\n");
+	 envoyer(f.print()+"\r\n");
 }
 void MaSocket::recever(char buf[]) const
 {

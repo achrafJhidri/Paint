@@ -34,6 +34,7 @@ ParseurFormeComplexe::~ParseurFormeComplexe()
 
 Forme * ParseurFormeComplexe::resoudre1(const string & d) const
 {
+
 	int indicePolygone = d.find("FormeComplexe", 0);
 
 	if (indicePolygone == std::string::npos)
@@ -46,28 +47,28 @@ Forme * ParseurFormeComplexe::resoudre1(const string & d) const
 
 		int indiceAccolladeO = d.find("[");
 
-		int indiceAccolladeF = d.find("]");
+		int indiceAccolladeF = d.rfind("]");
 
 		string ligne = d.substr(indiceAccolladeO + 1, indiceAccolladeF - indiceAccolladeO - 1);
 
 		vector<Forme*> v;
 		vector<string> res = split(ligne, '|');
-
+	
 		ParseurForme * p = new ParseurSegment(NULL);
 		p = new ParseurCercle(p);
 		p = new ParseurTriangle(p);
 		p = new ParseurPolygone(p);
 		p = new ParseurFormeComplexe(p);
 
-		for (int i = 0; i < res.size(); i++)
+		for (unsigned int  i = 0; i < res.size(); i++)
 		{
 			Forme * forme = p->resoudre(res[i]);
 			v.push_back(forme);
 		}
-		
+
 		FormeComplexe * f = new FormeComplexe();
 		f->setCouleur(couleur);
-		for (int i = 0; i < v.size(); i++)
+		for (unsigned int  i = 0; i < v.size(); i++)
 			f->addForme(*v[i]);
 
 

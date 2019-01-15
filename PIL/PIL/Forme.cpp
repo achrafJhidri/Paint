@@ -10,7 +10,7 @@ Forme::Forme()
 {
 }
 
-Forme::Forme(int c)
+Forme::Forme(unsigned int c)
 	:couleur(c)
 {
 }
@@ -46,12 +46,12 @@ Forme::~Forme()
 {
 }
 
-int Forme::getCouleur() const
+unsigned int Forme::getCouleur() const
 {
 	return couleur;
 }
 
-void Forme::setCouleur(const int c) 
+void Forme::setCouleur(const unsigned int c)
 {
 
 	couleur = c;

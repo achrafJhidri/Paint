@@ -7,7 +7,7 @@ FormeSimple::FormeSimple()
 {
 }
 
-FormeSimple::FormeSimple(int couleur)
+FormeSimple::FormeSimple(unsigned int couleur)
 	:Forme(couleur)
 {
 }

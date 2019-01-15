@@ -13,7 +13,7 @@ Polygone::Polygone()
 	
 }
 
-Polygone::Polygone(int couleur, const Vecteur2D & p1, const Vecteur2D & p2, const Vecteur2D & p3)
+Polygone::Polygone(unsigned int couleur, const Vecteur2D & p1, const Vecteur2D & p2, const Vecteur2D & p3)
 	:FormeSimple(couleur)
 {
 	points.push_back(p1);
@@ -23,7 +23,7 @@ Polygone::Polygone(int couleur, const Vecteur2D & p1, const Vecteur2D & p2, cons
 
 
 
-Polygone::Polygone(int couleur, const vector<Vecteur2D>& v)
+Polygone::Polygone(unsigned int couleur, const vector<Vecteur2D>& v)
 	:FormeSimple(couleur),points(v)
 {
 	if (v.size() < 3)
@@ -51,7 +51,7 @@ const vector<Vecteur2D> &Polygone::getPoints() const
 	return points;
 }
 
-const Vecteur2D & Polygone::operator[](int index) const
+const Vecteur2D & Polygone::operator[](unsigned int index) const
 {
 	return points[index];
 }
@@ -63,10 +63,10 @@ void Polygone::addPoint(const Vecteur2D & p)
 	points.push_back(p);
 }
 
-void Polygone::supPoint(int index)
+void Polygone::supPoint(unsigned int index)
 {
 	if (typeid(*this) == typeid(Triangle))
-		throw "vous ne pouvez pas ajouter de point a un triangle";
+		throw "vous ne pouvez pas supprimer de point a un triangle";
 	if (index < 0 || index >= points.size())
 		throw 44;
 	points.erase(points.begin()+index);
@@ -96,7 +96,7 @@ const Polygone & Polygone::operator=(const Polygone & s)
 double Polygone::calculeAir() const
 {
 	double air ;
-	int i;
+	unsigned int i;
 	for ( i = 2 , air = 0; i < points.size(); i++)
 		air += Triangle(couleur,points[0], points[i - 1], points[i]).calculeAir();
 
@@ -108,7 +108,7 @@ Polygone::operator string() const
 	ostringstream os;
 	os << FormeSimple::operator string() + " de type polygone [";
 
-	for (int i = 0; i < points.size()-1 ; i++)
+	for (unsigned int i = 0; i < points.size()-1 ; i++)
 		os << " p" << i << " " << points[i] << ",";
 	os << " p" << points.size()-1 << " " << points[points.size()-1] << "]";
 
@@ -124,8 +124,8 @@ Forme * Polygone::transforme(const Transformation & t) const
 string Polygone::print() const
 {
 	ostringstream os;
-	os << "Polygone couleur " << couleur << "{";
-	for (int i = 0; i < points.size() - 1; i++)
+	os << "Polygone couleur " << couleur << " {";
+	for (unsigned int i = 0; i < points.size() - 1; i++)
 		os << points[i] <<";";
 	os << points[points.size() - 1] << "}";
 

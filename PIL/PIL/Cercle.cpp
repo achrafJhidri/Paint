@@ -8,7 +8,7 @@ Cercle::Cercle()
 
 }
 
-Cercle::Cercle(int couleur,const Vecteur2D& c, double r)
+Cercle::Cercle(unsigned int couleur,const Vecteur2D& c, double r)
 	: FormeSimple(couleur), centre(c), rayon(r)
 {
 

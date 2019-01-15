@@ -7,7 +7,7 @@ Segment::Segment()
 {
 }
 
-Segment::Segment(int c, const Vecteur2D & d,const  Vecteur2D & f)
+Segment::Segment(unsigned int c, const Vecteur2D & d,const  Vecteur2D & f)
 	: FormeSimple(c), depart(d), fin(f)
 {
 }

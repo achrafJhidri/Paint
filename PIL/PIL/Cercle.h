@@ -11,7 +11,7 @@ class Cercle :
 public:
 	//constructeur
 	Cercle();
-	Cercle(int couleur, const Vecteur2D &centre, double rayon);
+	Cercle(unsigned int couleur, const Vecteur2D &centre, double rayon);
 	Cercle(const Cercle &c);
 	Forme* Clone() const;
 	//destrcture
@@ -24,7 +24,8 @@ public:
 
 	double calculeAir()const;
 	operator string() const;
-	//bool operator==(const Cercle &c)const;
+
+
 
 	const Cercle & operator= (const Cercle &c);
 

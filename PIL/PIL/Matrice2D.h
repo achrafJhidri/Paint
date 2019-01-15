@@ -10,7 +10,7 @@ public:
 	{
 	}
 	/**
-	*@alpha : radian
+	*\param alpha : radian
 	*/
 	static const Matrice2D creeRotationD(const double & alpha);
 	/**
