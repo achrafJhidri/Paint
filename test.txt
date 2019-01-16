@@ -1,0 +1,2 @@
+FormeComplexe couleur 9999999 [Segment couleur 55 {(32.21,88.11);(11,-32.32)}|FormeComplexe couleur 200 [Segment couleur 444444 {(321.10,88.1);(11.0,-32.32)}|Cercle de rayon 105.32 couleur 11111111(-50.1,0.5)]]
+
