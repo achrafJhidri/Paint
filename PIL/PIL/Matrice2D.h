@@ -1,3 +1,8 @@
+/**
+*\file Matrice2D.h
+*\author JHIDRI MOKHTARI
+*\brief class intermediaire
+*/
 #pragma once
 #include "Vecteur2D.h"
 class Matrice2D

@@ -1,3 +1,4 @@
+
 #include "ChargeurListeForme.h"
 #include <fstream>
 static   ChargeurListeForme * chargeur = ChargeurListeForme::getInstance();
@@ -7,11 +8,7 @@ ChargeurListeForme * ChargeurListeForme::getInstance()
 	return chargeur;
 }
 
-const string ChargeurListeForme::getDescription() 
-{
-	return "ce chargeur parcour un 'fichier' grace a un 'Parseur' et retourne un vector the Forme";
 
-}
 
 vector<Forme*> ChargeurListeForme::charge(const string filename, const ParseurForme * p)
 {

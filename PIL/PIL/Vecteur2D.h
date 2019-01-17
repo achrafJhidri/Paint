@@ -1,3 +1,8 @@
+/**
+*\file Vecteur2D.h
+*\author MICHEL
+*\brief Vecteur2D est un point2D (double x , double y)
+*/
 #pragma once
 #include<string>
 #include <sstream>

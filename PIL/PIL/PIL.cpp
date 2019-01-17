@@ -72,26 +72,38 @@ int main()
 	// Test Communication avec serveur Java
 	// initialisation WSA
 	initialisationWSA();
-	char * buf = (char *) malloc(BUFSIZ * sizeof(char));
-	//MaSocket  sock;
-	//sock.connectTo(ipAddress, port);
+
+
 
 	FormeComplexe f;
-	Segment s(211191123, Vecteur2D(1, 1), Vecteur2D(221, 211));
-	f.addForme(s).addForme(Triangle(201, Vecteur2D(4, -32), Vecteur2D(389, -3.2), Vecteur2D(63, -1)));
-	/*sock.envoyer(f);
-	sock.recever(buf);*/
-	/*cout << buf << endl;*/
+	Segment s(211191123, Vecteur2D(1, 1), Vecteur2D(70, 80));
+	f.addForme(s).addForme(Triangle(2033211, Vecteur2D(4, -32), Vecteur2D(40, -3.2), Vecteur2D(63, -1)));
+
+
 	Triangle t = Triangle(4442131, Vecteur2D(4, -32), Vecteur2D(200, -3.2), Vecteur2D(63, -1));
-	//t.accepte(DessinateurJava());
 
 
-	//Cercle c(200, Vecteur2D(1, 1), 10);
-	//Forme * cprime = c.transforme(h);
-	//cout << "la rotation PI au centre 0.0" << c << "donne " << *cprime << endl;
 
-	//test de la recuperation apartir d'un fichier
+
 	DessinateurJava dessinateur(ipAddress,port);
+	//
+	//f.accepte(dessinateur);
+	//t.accepte(dessinateur);
+	Homotetie h = Homotetie(Vecteur2D(0,0), 4);
+	//Forme* fprime = f.transforme(h);
+	//fprime->accepte(dessinateur);
+	
+	Cercle c(200, Vecteur2D(1, 1), 103.21);
+	f.addForme(c);
+
+	f.accepte(dessinateur);
+	/*c.accepte(dessinateur);
+
+	Forme * cprime = c.transforme(h);
+	cprime->accepte(dessinateur);
+*/
+
+
 	//ChargeurListeForme * chargeur = ChargeurListeForme::getInstance();
 
 	//ParseurForme * parseur = new ParseurSegment(NULL);
@@ -103,44 +115,47 @@ int main()
 	// vector<Forme*> v = chargeur->charge("file.txt", parseur);
 
 	// FormeComplexe f2;
-	//	 for (unsigned int i = 0; i < v.size(); i++)
-	//		 f2.addForme(*v[i]);
-	/*	 for (unsigned int i = 0; i < v.size(); i++)
-			 cout << *v[i] << endl;*/
+	// for (unsigned int i = 0; i < v.size(); i++)
+	// {
+	//	 (*v[i]).accepte(dessinateur);
+
+	// }
+	//	
  
-		// (*v[0]).accepte(dessinateur);
+		 
 
 	// cout << v.size() << endl;
 
 	//Segment s(211191123, Vecteur2D(1, 1), Vecteur2D(221, 211));
 	//Cercle c(200, Vecteur2D(10, 10), 40.21);
-	/*Triangle t = Triangle(80000032, Vecteur2D(4, -32), Vecteur2D(200, -3.2), Vecteur2D(63, -1));
-
-	Polygone p(t);
-	p.addPoint(Vecteur2D(4, 4));*/
+	//Triangle t = Triangle(80000032, Vecteur2D(4, -32), Vecteur2D(200, -3.2), Vecteur2D(63, -1));
+	//Triangle t = Triangle(4442131, Vecteur2D(4, -32), Vecteur2D(200, -3.2), Vecteur2D(63, -1));
+	//Polygone p(t);
+	//p.addPoint(Vecteur2D(4, 50));
 	//p.addPoint(Vecteur2D(21, -4.11));
 	//p.addPoint(Vecteur2D(21, 44.11));
 	//p.addPoint(Vecteur2D(55, 0.11));
 
-	//FormeComplexe f;
-	//f.addForme(c).addForme(t).addForme(s).addForme(p);
+	
+	//f.addForme(c).addForme(t).addForme(s);
 
 
 
 	 
 	
 	//c.accepte(dessinateur);
-	 t.accepte(dessinateur);
-	/* p.accepte(dessinateur);*/
-	// f.accepte(dessinateur);
+	// t.accepte(dessinateur);
+	// p.accepte(dessinateur);
+	//f.accepte(dessinateur);
 	//s.accepte(dessinateur);
 	 //for (int i = 0; i < v.size(); i++)
 		// v[i]->accepte(dessinateur);
 	
-	 //delete p;
-	 //delete chargeur;
+	// delete p;
+	/* delete chargeur;*/
+	 /*delete parseur;*/
 
-
+	
 
 	// TEST Homotetie!
 	//Homotetie h = Homotetie(Vecteur2D(0,0), 2);
@@ -265,6 +280,7 @@ int main()
 
 	return 0;
 }
+
 void initialisationWSA() {
 	WSADATA WSAData;
 	WORD version = MAKEWORD(2, 0);

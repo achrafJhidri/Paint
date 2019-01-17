@@ -16,11 +16,11 @@ Cercle::Cercle(unsigned int couleur,const Vecteur2D& c, double r)
 
 
 
-Cercle::Cercle(const Cercle &c)
-	:FormeSimple(c.couleur), centre(c.centre), rayon(c.rayon)
-{
-
-}
+//Cercle::Cercle(const Cercle &c)
+//	:FormeSimple(c.couleur), centre(c.centre), rayon(c.rayon)
+//{
+//
+//}
 Forme* Cercle::Clone() const
 {
 	return new Cercle(*this);

@@ -1,5 +1,5 @@
 /**
-*\file ParseurExpert.h
+*\file DessinateurJava.h
 *\author JHIDRI MOKHTARI
 *\brief Class Abstraite qui prend une forme et la dessine avec Java
 */
@@ -14,7 +14,7 @@ class DessinateurJava :
 public:
 /**
 *\Constructeur
-*\crée un socket connecté à l'addresse IP & port donnée en paramètre
+*crée un socket connecté à l'addresse IP & port donnée en paramètre
 *\param ip Adresse Ip du serveur Dessinateur 
 *\param port port d'écoute du serveur Dessinateur
 */
@@ -27,6 +27,6 @@ public:
 *\param f la forme a dessiner
 */
 	void visite(const Forme& f)const ;
-	operator string() const;
+	
 };
 

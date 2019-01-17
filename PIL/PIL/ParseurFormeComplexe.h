@@ -12,11 +12,20 @@ class ParseurFormeComplexe :
 {
 public:
 	
-
-	ParseurFormeComplexe(ParseurForme * f);
+	/**
+	*\brief Constructeur de ParseurFormeComplexe en le chainant au ParseurForme p
+	*\param s : le parseur suivant
+	*/
+	ParseurFormeComplexe(ParseurForme * p);
+	/**
+	*\brief Destructeur
+	*/
 	~ParseurFormeComplexe();
-
-	Forme* resoudre1(const string& d) const;
+	/**
+	*\brief renvoi une forme* (FormeComplexe*) si la \param chaine contient une FormeComplexe
+	*\param chaine : la chaine a convertir en forme
+	*/
+	Forme* resoudre1(const string& chaine) const;
 
 };
 

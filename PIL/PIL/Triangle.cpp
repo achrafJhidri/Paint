@@ -11,11 +11,11 @@ Triangle::Triangle(unsigned int couleur, const Vecteur2D & p1, const Vecteur2D &
 
 }
 
-Triangle::Triangle(const Triangle & t)
-	:Polygone(t)
-{
-
-}
+//Triangle::Triangle(const Triangle & t)
+//	:Polygone(t)
+//{
+//
+//}
 
 Forme * Triangle::Clone() const
 {
@@ -61,7 +61,7 @@ string Triangle::print() const
 {
 	ostringstream os;
 
-	os << "Triangle couleur " << couleur << " {";
+	os << "Polygone couleur " << couleur << " {";
 	for (unsigned int i = 0; i < points.size() - 1; i++)
 		os << points[i] <<";";
 	os << points[points.size()-1] << "}";

@@ -1,5 +1,5 @@
 /**
-*\file ParseurExpert.h
+*\file Dessinateur.h
 *\author JHIDRI MOKHTARI
 *\brief Class Abstraite qui prend une forme et la dessine
 */
@@ -9,8 +9,8 @@
 class Dessinateur
 {
 public:
-	~Dessinateur();
+	virtual ~Dessinateur() {};
 	virtual void visite(const Forme& f)const = 0;
-	virtual operator string() const;
+	
 };
 

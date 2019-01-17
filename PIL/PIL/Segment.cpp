@@ -12,10 +12,10 @@ Segment::Segment(unsigned int c, const Vecteur2D & d,const  Vecteur2D & f)
 {
 }
 
-Segment::Segment(const Segment & s)
-	:FormeSimple(s.couleur),depart(s.depart),fin(s.fin)
-{
-}
+//Segment::Segment(const Segment & s)
+//	:FormeSimple(s.couleur),depart(s.depart),fin(s.fin)
+//{
+//}
 
 Forme * Segment::Clone() const
 {

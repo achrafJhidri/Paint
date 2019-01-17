@@ -1,3 +1,8 @@
+/**
+*\file Translation.h
+*\author JHIDRI MOKHTARI
+*\brief applique une Translation sur la forme
+*/
 #pragma once
 #include "Transformation.h"
 #include "Vecteur2D.h"
@@ -7,9 +12,14 @@ class Translation :
 	Vecteur2D u;
 
 public:
-
-	Translation( const Vecteur2D & f);
-
+	/**
+	*\brief Construit une Translation a base d'un centre et un facteur f
+	*\param v : le vecteur de translation 
+	*/
+	Translation( const Vecteur2D & v);
+	/**
+	*Destruction
+	*/
 	~Translation();
 
 
@@ -17,7 +27,10 @@ public:
 
 	
 	
-	 operator string()const;
+	/**
+	*\brief applique la Translation sur un Point2D
+	*\param point2D :le point qui subbit l'homotetie
+	*/
 	  Vecteur2D visite(const Vecteur2D& f)const ;
 };
 

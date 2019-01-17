@@ -9,8 +9,19 @@ class ParseurTriangle :
 	public ParseurForme
 {
 public:
+	/**
+	*\brief Constructeur de ParseurTriangle en le chainant au ParseurForme s
+	*\param s : le parseur suivant
+	*/
 	ParseurTriangle(ParseurForme*);
+	/**
+	*\brief Destructeur
+	*/
 	~ParseurTriangle();
-	Forme * resoudre1(const string & d) const;
+	/**
+	*\brief renvoi une forme* (Triangle*) si la \param chaine contient un Triangle
+	*\param chaine : la chaine a convertir en forme
+	*/
+	Forme * resoudre1(const string & chaine) const;
 };
 

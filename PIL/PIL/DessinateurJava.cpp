@@ -19,9 +19,3 @@ void DessinateurJava::visite(const Forme & f) const
 	sock.envoyer(f);
 }
 
-DessinateurJava::operator string() const
-{
-	ostringstream os;
-	//os << Dessinateur::operator string << "avec Java awt ";
-	return os.str();
-}

@@ -30,12 +30,12 @@ Polygone::Polygone(unsigned int couleur, const vector<Vecteur2D>& v)
 		throw "Polygone c'est minimum 3 points";
 }
 
-Polygone::Polygone(const Polygone & s)
-	:FormeSimple(s.couleur),points(s.points)
-{
-	
-
-}
+//Polygone::Polygone(const Polygone & s)
+//	:FormeSimple(s.couleur),points(s.points)
+//{
+//	
+//
+//}
 
 Forme * Polygone::Clone() const
 {
