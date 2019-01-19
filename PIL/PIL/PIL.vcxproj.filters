@@ -135,11 +135,14 @@
     <ClInclude Include="DessinateurJava.h">
       <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="SauveurFichier.h">
-      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="Sauveur.h">
       <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="SauveurTxt.h">
+      <Filter>Fichiers de ressources\Outils\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Erreur.h">
+      <Filter>Fichiers de ressources\Formes\Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -227,8 +230,11 @@
     <ClCompile Include="Sauveur.cpp">
       <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="SauveurFichier.cpp">
+    <ClCompile Include="SauveurTxt.cpp">
       <Filter>Fichiers de ressources\Outils\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Erreur.cpp">
+      <Filter>Fichiers de ressources\Formes\Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

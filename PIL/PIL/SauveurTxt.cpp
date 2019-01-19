@@ -1,17 +1,17 @@
-#include "SauveurFichier.h"
+#include "SauveurTxt.h"
 #include <fstream>
 
 
 using namespace std;
-SauveurFichier::SauveurFichier(const string & f):Sauveur(f)
+SauveurTxt::SauveurTxt(const string & f):Sauveur(f)
 {
 }
 
-SauveurFichier::~SauveurFichier()
+SauveurTxt::~SauveurTxt()
 {
 }
 
-void SauveurFichier::visite(const Forme & f) const
+void SauveurTxt::visite(const Forme & f) const
 {
 
 

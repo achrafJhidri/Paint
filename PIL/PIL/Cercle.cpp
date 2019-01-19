@@ -9,9 +9,9 @@ Cercle::Cercle()
 }
 
 Cercle::Cercle(unsigned int couleur,const Vecteur2D& c, double r)
-	: FormeSimple(couleur), centre(c), rayon(r)
+	: FormeSimple(couleur), centre(c)
 {
-
+	setRayon(r);
 }
 
 
@@ -27,11 +27,11 @@ Forme* Cercle::Clone() const
 
 }
 
-//destrcture
+
 Cercle::~Cercle() {
 
 }
-//getters setters
+
 const Vecteur2D& Cercle::getCentre()const
 {
 	return centre;
@@ -50,6 +50,8 @@ double Cercle::getRayon()const {
 }
 void Cercle::setRayon(const double r)
 {
+	if (r < 0)
+		throw Erreur("Rayon du Cercle < 0 ");
 	rayon = r;
 }
 

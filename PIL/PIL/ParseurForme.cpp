@@ -13,8 +13,6 @@ ParseurForme::~ParseurForme()
 
 Forme * ParseurForme::resoudre(const string & c) const
 {
-
-
 	Forme *f = this->resoudre1(c);        // cet expert tente de résoudre le
 										  //  problème
 	if (f != NULL) 			// cet expert a trouvé une solution 
@@ -28,3 +26,12 @@ Forme * ParseurForme::resoudre(const string & c) const
 }
 
 
+vector <string> ParseurForme::split(string chaine, char delim) {
+	vector<string> tab;
+	istringstream f(chaine.c_str());
+	string s;
+	while (getline(f, s, delim)) {
+		tab.push_back(s);
+	}
+	return tab;
+}

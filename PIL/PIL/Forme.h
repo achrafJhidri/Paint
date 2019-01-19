@@ -4,12 +4,14 @@
 *\brief class abstraite mère de toute la formes	
 */
 #pragma once
+#define _USE_MATH_DEFINES
 #include <string>
 #include <vector>
 #include <sstream>
 #include "Vecteur2D.h"
 #include <iostream>
-
+#include <math.h>
+#include "Erreur.h"
 
 class Dessinateur;
 class Sauveur;
@@ -17,7 +19,7 @@ class Transformation;
 class ParseurForme;
 
 
-#define M_PI (3.14159265358979323846)
+//#define M_PI (3.14159265358979323846)
 
 
 using namespace std;
@@ -86,7 +88,7 @@ public:
 	*  Dessine une forme 
 	* \param d : le Dessinateur de la forme
 	*/
-	void accepte(const Dessinateur & d)const;
+	void dessine(const Dessinateur & d)const;
 	/**
 	*  sauvgarde une forme sous Forme Text
 	* \param s : le Sauveur  

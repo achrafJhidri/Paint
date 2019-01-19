@@ -6,12 +6,12 @@
 
 
 
-
-Polygone::Polygone()
-	:FormeSimple()
-{
-	
-}
+//
+//Polygone::Polygone()
+//	:FormeSimple()
+//{
+//	
+//}
 
 Polygone::Polygone(unsigned int couleur, const Vecteur2D & p1, const Vecteur2D & p2, const Vecteur2D & p3)
 	:FormeSimple(couleur)
@@ -59,30 +59,30 @@ const Vecteur2D & Polygone::operator[](unsigned int index) const
 void Polygone::addPoint(const Vecteur2D & p)
 {
 	if (typeid(*this) == typeid(Triangle))
-		throw "vous ne pouvez pas ajouter de point a un triangle";
+		throw Erreur("vous ne pouvez pas ajouter de point a un triangle");
 	points.push_back(p);
 }
 
 void Polygone::supPoint(unsigned int index)
 {
 	if (typeid(*this) == typeid(Triangle))
-		throw "vous ne pouvez pas supprimer de point a un triangle";
-	if (index < 0 || index >= points.size())
-		throw 44;
+		throw Erreur("vous ne pouvez pas supprimer de point a un triangle");
+	if ( index >= points.size())
+		throw Erreur("Index hors bornes dans supPoint dans un polygone");
 	points.erase(points.begin()+index);
 }
 
 void Polygone::supPoint(const Vecteur2D & p)
 {
 	if (typeid(*this) == typeid(Triangle))
-		throw "vous ne pouvez pas ajouter de point a un triangle";
+		throw Erreur("vous ne pouvez pas ajouter de point a un triangle");
 
 	vector<Vecteur2D>::iterator it = find(points.begin(), points.end(), p) ;
 
 	if (it != points.end())
 		points.erase(it);
 	else
-		throw "j'ai pas réussi a trouve ton objet p dans mon vecteur lors de la suppression ";
+		throw Erreur("j'ai pas réussi a trouve ton objet p dans mon vecteur lors de la suppression ");
 }
 
 

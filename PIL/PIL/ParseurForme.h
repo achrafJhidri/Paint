@@ -32,5 +32,8 @@ public:
 	 Forme*  resoudre(const string& s) const ;
 	 
 	 virtual Forme* resoudre1(const string& d) const = 0;
+
+
+	 static vector <string> split(string chaine, char delim);
 };
 

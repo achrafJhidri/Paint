@@ -14,7 +14,7 @@ public:
 	/**
 	* Constructeur de Segment
 	*/
-	Segment();
+	/*Segment();*/
 	/**
 	* Constructeur de Segment
 	*\param couleur : la couleur de la forme

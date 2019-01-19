@@ -83,8 +83,8 @@ const FormeComplexe & FormeComplexe::supForme(const Forme & f)
 
 const FormeComplexe & FormeComplexe::supForme(const unsigned int i)
 {
-	if (i < 0 || i >= formes.size())
-		throw "index hors bornes dans supression dans formecomplexe";
+	if ( i >= formes.size())
+		throw Erreur("index hors bornes dans supression dans formecomplexe");
 
 	delete formes[i];
 	formes.erase(formes.begin() + i);
@@ -120,7 +120,7 @@ double FormeComplexe::calculeAir() const
 FormeComplexe::operator string() const
 {
 	ostringstream os;
-	os << "FormeComplexe " << Forme::operator string() << " [" << endl ;
+	os << "FormeComplexe [" << Forme::operator string() << "] [" << endl ;
 
 
 	for (unsigned int i = 0; i < formes.size(); i++)

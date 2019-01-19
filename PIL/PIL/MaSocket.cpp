@@ -66,18 +66,18 @@ void MaSocket::envoyer(const Forme & f) const
 {
 	 envoyer(f.print()+"\r\n");
 }
-void MaSocket::recever(char buf[]) const
-{
-	int rec = recv(sock, buf, BUFSIZ - 1, 0);
-	if (rec == SOCKET_ERROR)
-	{
-		cerr << "can't receive to the server, Err#" << WSAGetLastError() << endl;
-		closesocket(sock);
-		WSACleanup();
-	}
-	cout << "Message recu " << endl;
-
-	buf[rec] = '\0';
-
-	
-}
+//void MaSocket::recever(char buf[]) const
+//{
+//	int rec = recv(sock, buf, BUFSIZ - 1, 0);
+//	if (rec == SOCKET_ERROR)
+//	{
+//		cerr << "can't receive to the server, Err#" << WSAGetLastError() << endl;
+//		closesocket(sock);
+//		WSACleanup();
+//	}
+//	cout << "Message recu " << endl;
+//
+//	buf[rec] = '\0';
+//
+//	
+//}

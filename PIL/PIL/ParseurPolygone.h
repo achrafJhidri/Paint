@@ -21,10 +21,13 @@ public:
 	*/
 	~ParseurPolygone();
 	/**
-	*\brief renvoi une forme* (Polygone*) si la \param chaine contient un Polygone
+	*\brief renvoi une forme* (Polygone*) si la chaine contient un Polygone
 	*\param chaine : la chaine a convertir en forme
 	*/
 	Forme* resoudre1(const string& chaine) const;
+
+
+	
 };
 
 

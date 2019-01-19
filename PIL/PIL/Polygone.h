@@ -16,7 +16,7 @@ protected :
 	/**
 	* Constructeur de Polygone vide
 	*/
-	Polygone();
+	//Polygone();
 	/**
 	* Constructeur de Segment
 	*\param couleur : la couleur de la forme
@@ -55,19 +55,19 @@ public:
 	*\param p : le point à ajouter au polygone
 	*\throw Erreur : si l'objet est un Triangle il ne peut pas avoir un point en plus que 3
 	*/
-	virtual void addPoint(const Vecteur2D & p);
+	/*virtual*/ void addPoint(const Vecteur2D & p);
 	/**
 	* supprime le nème  point du tableau de points du Polygone
 	*\param index : l'indice du point à supprimer du polygone
 	*\throw Erreur : si l'objet est un Triangle on ne peut pas lui enlever un point
 	*/
-	virtual void supPoint(unsigned int index);
+	/*virtual*/ void supPoint(unsigned int index);
 	/**
 	* supprime le point p  du tableau de points du Polygone , si ce point la fait partie des points du Polygone
 	*\param p : le point à supprimer du polygone
 	*\throw Erreur : si l'objet est un Triangle on ne peut pas lui enlever un point
 	*/
-	virtual void supPoint(const Vecteur2D & p);
+	/*virtual*/ void supPoint(const Vecteur2D & p);
 
 
 	/**

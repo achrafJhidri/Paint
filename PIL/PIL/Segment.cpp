@@ -2,10 +2,10 @@
 #include "Transformation.h"
 
 
-Segment::Segment()
-	:FormeSimple(), depart(0,0) , fin(5,5)
-{
-}
+//Segment::Segment()
+//	:FormeSimple(), depart(0,0) , fin(5,5)
+//{
+//}
 
 Segment::Segment(unsigned int c, const Vecteur2D & d,const  Vecteur2D & f)
 	: FormeSimple(c), depart(d), fin(f)
@@ -78,8 +78,8 @@ string Segment::print() const
 {
 
 	ostringstream os;
-	os << "Segment couleur " << couleur << " {";
-	os << depart << ";" << fin << "}";
+	os << "Segment couleur " << couleur << " ";
+	os << depart << ";" << fin ;
 
 		return os.str();
 	

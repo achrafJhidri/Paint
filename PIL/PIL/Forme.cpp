@@ -28,7 +28,7 @@ Forme::operator string() const
 	return os.str();
 }
 
-void Forme::accepte(const Dessinateur & d) const
+void Forme::dessine(const Dessinateur & d) const
 {
 	d.visite(*this);
 }
