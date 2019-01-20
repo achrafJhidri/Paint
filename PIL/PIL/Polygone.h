@@ -30,7 +30,7 @@ public:
 	*\param v : tableau de points 
 	*/
 	Polygone(unsigned int couleur, const vector<Vecteur2D> & v);
-	//Polygone(const Polygone & s);
+
 	/**
 	* Clone le Segment
 	*\return Forme * un nouveau Segment identique

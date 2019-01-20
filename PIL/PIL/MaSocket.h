@@ -40,6 +40,6 @@ public:
 	*\brief prend une forme et l'envoi en format text au serveur via le socket
 	*/
 	void envoyer(const Forme& f)const;
-	/*void recever(char buf[])const;*/
+	
 };
 

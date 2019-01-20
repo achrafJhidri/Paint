@@ -22,11 +22,7 @@ public:
 	*\param fin : le point 2D de fin
 	*/
 	Segment(unsigned int couleur, const Vecteur2D & depart, const Vecteur2D & fin);
-	/**
-	* Constructeur par recopie de Segment
-	*\param s : le Segment à recopier
-	*/
-	/*Segment(const Segment & s);*/
+
 	/**
 	* Clone le Segment
 	*\return Forme * un nouveau Segment identique

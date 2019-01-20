@@ -1,5 +1,6 @@
 #include "SauveurTxt.h"
 #include <fstream>
+#include "Erreur.h"
 
 
 using namespace std;
@@ -24,7 +25,7 @@ void SauveurTxt::visite(const Forme & f) const
 	}
 	else
 	{
-		throw "impossible d'ouvrir le fichier ";
+		throw Erreur("impossible d'ouvrir le fichier ");
 	}
 
 

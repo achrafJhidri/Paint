@@ -54,6 +54,8 @@ FormeComplexe & FormeComplexe::addForme(const Forme & f)
 	{
 		if (formes.size() == 0)
 			setCouleur(f.getCouleur());
+
+
 		Forme * f2 = f.Clone();
 		if (formes.size() != 0)
 			f2->setCouleur(getCouleur());

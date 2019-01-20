@@ -14,7 +14,7 @@ public:
 	*\param p1 p2 p3 : les 3 points formant le triangle
 	*/
 	Triangle(unsigned int couleur ,const Vecteur2D & p1, const Vecteur2D & p2, const Vecteur2D & p3 );
-	/*Triangle(const Triangle & t);*/
+
 	/**
 	* Clone le Triangle
 	*\return Forme * un nouveau Triangle identique
@@ -41,10 +41,7 @@ public:
 	*/
 	operator string()const;
 	Forme* transforme(const Transformation & t)const;
-	/**
-	* renvoi le Triangle en format String
-	*/
-	string print() const;
+	
 };
 
 

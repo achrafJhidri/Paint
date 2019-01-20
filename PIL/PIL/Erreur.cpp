@@ -11,8 +11,8 @@ Erreur::Erreur()
 {
 }
 
-Erreur::Erreur(const string & m)
-	:msg(m)
+Erreur::Erreur(const string & m) :
+	exception(m.c_str() , -1), msg(m)
 {}
 
 Erreur::Erreur(const Erreur & e)	: exception(e.what())

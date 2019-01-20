@@ -17,5 +17,6 @@ void DessinateurJava::visite(const Forme & f) const
 {
 
 	sock.envoyer(f);
+
 }
 

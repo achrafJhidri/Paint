@@ -12,10 +12,7 @@ FormeSimple::FormeSimple(unsigned int couleur)
 {
 }
 
-//FormeSimple::FormeSimple(const FormeSimple & f)
-//	:Forme(f)
-//{
-//}
+
 
 
 FormeSimple::~FormeSimple()

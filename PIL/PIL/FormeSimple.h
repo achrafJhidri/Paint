@@ -19,11 +19,7 @@ public:
 	*\param couelur : la couleur de la forme
 	*/
 	FormeSimple(unsigned int couleur);
-	/**
-	* Constructeur par recopie d'une formeSimple
-	*\param f : la formeSimple a recopié
-	*/
-	//FormeSimple(const FormeSimple & f);
+
 	/**
 	* Destructeur
 	*/

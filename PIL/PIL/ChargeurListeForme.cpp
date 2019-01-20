@@ -38,7 +38,7 @@ vector<Forme*> ChargeurListeForme::charge(const string filename, const ParseurFo
 		}
 	}
 	else
-		throw "File not Found";
+		throw Erreur("Openening File");
 
 	return vecteurForme;
 }

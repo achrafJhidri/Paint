@@ -23,11 +23,7 @@ public:
 	*\param centre : le centre du Cercle 
 	*/
 	Cercle(unsigned int couleur, const Vecteur2D &centre, double rayon);
-	/**
-	* Constructeur par recopie de Cercle
-	*\param c : le Cercle à recopier
-	*/
-	/*Cercle(const Cercle &c);*/
+
 	/**
 	* Clone le Cercle
 	*\return Forme * un nouveau Cercle identique
